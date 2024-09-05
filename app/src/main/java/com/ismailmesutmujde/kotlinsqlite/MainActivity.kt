@@ -23,6 +23,13 @@ class MainActivity : AppCompatActivity() {
             //myDatabase.execSQL("INSERT INTO musicians (name, age) VALUES ('Lars', 60)")
             //myDatabase.execSQL("INSERT INTO musicians (name, age) VALUES ('Kirk', 55)")
 
+            // update
+            //myDatabase.execSQL("UPDATE musicians SET age = 61 WHERE name = 'Lars'")
+            //myDatabase.execSQL("UPDATE musicians SET name = 'Kirk Hammett' WHERE id = 3")
+
+            // delete
+            //myDatabase.execSQL("DELETE FROM musicians WHERE name ='Lars'")
+
             // filtering
             val cursor = myDatabase.rawQuery("SELECT * FROM musicians", null)
             //val cursor = myDatabase.rawQuery("SELECT * FROM musicians WHERE name = 'James'", null)
